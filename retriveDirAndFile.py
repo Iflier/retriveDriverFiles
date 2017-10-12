@@ -24,10 +24,10 @@ for dirpath, dirnames, filenames in os.walk(root, topdown=True):
         if os.path.isfile(os.path.join(root, filename)):
             print(os.path.join(root, filename))
             i += 1
-        if not any(dirnames):
-            for filename2 in filenames:
-                if all(os.path.splitext(filename2)):
-                    print(os.path.join(dirpath, filename2))
-                    i += 1
+    if not any(dirnames):
+        for filename2 in filenames:
+            if all(os.path.splitext(filename2)):
+                print(os.path.join(dirpath, filename2))
+                i += 1
 
 print("指定的盘符：{0}，共包含{1:^+15,d}个文件".format(args['dirpath'].upper(), i))
