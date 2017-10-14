@@ -8,3 +8,4 @@ retriveDriverVer4.py文件增加了文件大小、文件总数和检索用时的
  -- 2017.10.12
  renameWindowsLockScreenImage.py
  用于把Windows10锁屏时随机下载的无后缀文件重命名为带有后缀的文件
+  --2017.10.14 
